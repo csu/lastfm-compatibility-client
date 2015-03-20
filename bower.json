@@ -1,0 +1,20 @@
+{
+  "name": "compat-client",
+  "version": "0.0.0",
+  "homepage": "https://github.com/csu/compat-client",
+  "authors": [
+    "Christopher Su <christophersu9@gmail.com>"
+  ],
+  "license": "GPL v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
