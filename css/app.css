@@ -1,3 +1,15 @@
 .jumbotron h1 {
     font-size: 50px;
 }
+
+.compat-form {
+    font-size: 18;
+}
+
+.compat-form td {
+    padding-bottom: 8px;
+}
+
+.form-title {
+    font-weight: bold;
+}
