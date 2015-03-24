@@ -1,1 +1,17 @@
-<b>DISPLAY RESULTS HERE AND STUFF</b>
+<h3>Compatibility Score: {{result.score}}</h3>
+<h4>Person 1: {{result.user_1}}</h4>
+<h4>Person 2: {{result.user_2}}</h4>
+
+<h4>Artist Rankings:</h4>
+<form class="artist-results">
+    <table class="table">
+        <tr>
+            <td>Artist</td>
+            <td>Score</td>
+        </tr>
+        <tr ng-repeat="artist in result.topartists">
+            <td>{{artist[0]}}</td>
+            <td>{{artist[1]}}</td>
+        </tr>
+    </table>
+</form>
