@@ -12,22 +12,7 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Last.fm Compatibility Score</h1>
-            <form class="compat-form">
-                <table>
-                    <tr>
-                        <td class="form-title">First Person:</td>
-                        <td><input type="text" name="first"></td>
-                    </tr>
-                    <tr>
-                        <td class="form-title">Second Person:</td>
-                        <td><input type="text" name="second"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit"
-                            value="Find Compatibility" class="form-submit-btn"></td>
-                    </tr>
-                </table>
-            </form>
+            <div class="main-content" ng-include="layout.mainContent"></div>
         </div>
     </div>
 </body>

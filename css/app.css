@@ -1,9 +1,18 @@
-.jumbotron h1 {
-    font-size: 50px;
+.jumbotron {
+    padding: 25px 0;
 }
 
-.compat-form {
+.jumbotron h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.compat-form .form-title {
     font-size: 18;
+}
+
+.compat-form .form-submit-btn {
+    font-size: 18;   
 }
 
 .compat-form td {
