@@ -10,14 +10,9 @@ compatApp.controller('CompatCtrl', function ($scope, $http) {
 
     $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
     $scope.submitMainForm = function() {
-        $http({
-            url: '/api/compute',
-            method: "POST",
-            data: JSON.stringify({
+        $http.post('/api/compute', {
                     me: $scope.person.first,
                     friend: $scope.person.second
-            }),
-            headers: {'Content-Type': 'application/json'}
         }).
         success(function(data, status, headers, config) {
             $layout.mainContent = "/static/html/results.html";
