@@ -5,11 +5,13 @@
 <h4>Artist Rankings:</h4>
 <form class="artist-results">
     <table class="table">
-        <tr>
+        <tr class="results-table-header">
+            <td>Rank</td>
             <td colspan="2">Artist</td>
         </tr>
         <tr ng-repeat="artist in result.result.topartists">
-            <td><img src='{{artist.image}}' />
+            <td>{{$index+1}}</td>
+            <td><img src='{{artist.image}}' /></td>
             <td>{{artist.name}}</td>
         </tr>
     </table>
