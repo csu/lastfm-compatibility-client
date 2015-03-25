@@ -4,7 +4,9 @@ var compatApp = angular.module('compatApp', []);
 
 compatApp.controller('CompatCtrl', function ($scope, $http) {
     $scope.layout = {};
-    $scope.layout.mainContent = "/static/html/home-form.html";
+    $scope.displayForm = function() {
+        $scope.layout.mainContent = "/static/html/home-form.html";
+    }();
 
     $scope.person = {};
 
