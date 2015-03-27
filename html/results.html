@@ -1,10 +1,17 @@
-<h4>Person 1: {{result.user_1}}</h4>
-<h4>Person 2: {{result.user_2}}</h4>
+<h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{result.user_1}}</h4>
+<h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{result.user_2}}</h4>
 
-<h3>Artist Compatibility Score: {{result.artists.score}}</h3>
-<h3>Album Compatibility Score: {{result.albums.score}}</h3>
+<h3>Compatibility Scores</h3>
 
-<br>
+<button class="btn btn-default btn-lg" type="button">
+  Artists <span class="badge">{{result.artists.score}}</span>
+</button>
+
+<button class="btn btn-default btn-lg" type="button">
+  Albums <span class="badge">{{result.albums.score}}</span>
+</button>
+
+<h3>Rankings</h3>
 
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#artist-results">Artists</a></li>
@@ -13,7 +20,7 @@
 
 <div class="tab-content">
     <div id="artist-results" class="tab-pane fade in active">
-        <h4 class="result-section-header">Artist Rankings</h4>
+        <!-- <h4 class="result-section-header">Artist Rankings</h4> -->
         <table class="results table table-condensed table-striped table-bordered">
             <tr class="results-table-header">
                 <td>Rank</td>
@@ -27,7 +34,7 @@
         </table>
     </div>
     <div id="album-results" class="tab-pane fade">
-        <h4 class="result-section-header">Album Rankings</h4>
+        <!-- <h4 class="result-section-header">Album Rankings</h4> -->
         <table class="results table table-condensed table-striped table-bordered">
             <tr class="results-table-header">
                 <td>Rank</td>
