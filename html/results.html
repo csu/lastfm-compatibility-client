@@ -25,7 +25,7 @@
             <tr ng-repeat="item in result.artists.top">
                 <td class="table-col-rank">{{$index+1}}</td>
                 <td class="table-col-image"><img ng-src="{{item.image}}" /></td>
-                <td class="table-col-main-text">{{item.name}}</td>
+                <td class="table-col-main-text"><a ng-href="{{item.url}}" target="_blank">{{item.name}}</a></td>
             </tr>
         </table>
     </div>
@@ -39,8 +39,8 @@
             <tr ng-repeat="item in result.albums.top">
                 <td class="table-col-rank">{{$index+1}}</td>
                 <td class="table-col-image"><img ng-src="{{item.image}}" /></td>
-                <td class="table-col-main-text">{{item.name}}</td>
-                <td class="table-col-alt-text">{{item.artist}}</td>
+                <td class="table-col-main-text"><a ng-href="{{item.url}}" target="_blank">{{item.name}}</a></td>
+                <td class="table-col-alt-text"><a ng-href="{{item.artist.url}}" target="_blank">{{item.artist.name}}</a></td>
             </tr>
         </table>
     </div>
