@@ -15,16 +15,19 @@
 .compat-form td {
   padding-bottom: 8px;
 }
-.artist-results .results-table-header {
+.results .results-table-header {
   font-weight: bold;
   font-size: 14pt;
 }
-.artist-results .table-col-artist-image {
-  width: 64;
-}
-.artist-results .table-col-rank {
+.results .table-col-rank {
   font-size: 16pt;
 }
-.artist-results .table-col-artist {
+.results .table-col-image {
+  width: 64;
+}
+.results .table-col-main-text {
   font-size: 13pt;
+}
+.result-section-header {
+  font-size: 18pt;
 }
