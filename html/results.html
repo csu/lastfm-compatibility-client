@@ -11,10 +11,10 @@
         </tr>
         <tr ng-repeat="artist in result.result.topartists">
             <td>{{$index+1}}</td>
-            <td><img src='{{artist.image}}' /></td>
+            <td><img ng-src="{{artist.image}}" /></td>
             <td>{{artist.name}}</td>
         </tr>
     </table>
 </form>
 
-<a ng-href="#" ng-click="displayForm()">Try again</a>
+<button type="button" ng-click="displayForm()">Try again</button>
