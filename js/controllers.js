@@ -53,7 +53,13 @@ compatApp.controller('CompatCtrl', function ($scope, $http) {
         }).
         success(function(data, status, headers, config) {
             $scope.result = data;
-            $scope.layout.mainContent = "/static/html/results.html";
+
+            if ($scope.result["status"] != 0) {
+                $scope.layout.mainContent = "/static/html/error.html";
+            }
+            else {
+                $scope.layout.mainContent = "/static/html/results.html";
+            }
         }).
         error(function(data, status, headers, config) {});
     };
