@@ -1,6 +1,10 @@
-<h3>Compatibility Score: {{result.result.artistscore}}</h3>
-<h4>Person 1: {{result.result.user_1}}</h4>
-<h4>Person 2: {{result.result.user_2}}</h4>
+<h4>Person 1: {{result.user_1}}</h4>
+<h4>Person 2: {{result.user_2}}</h4>
+
+<h3>Artist Compatibility Score: {{result.artists.score}}</h3>
+<h3>Album Compatibility Score: {{result.albums.score}}</h3>
+
+<br><br>
 
 <h4 class="result-section-header">Artist Rankings</h4>
 <table class="results table table-condensed table-striped table-bordered">
@@ -8,10 +12,24 @@
         <td>Rank</td>
         <td colspan="2">Artist</td>
     </tr>
-    <tr ng-repeat="artist in result.result.topartists">
+    <tr ng-repeat="item in result.artists.top">
         <td class="table-col-rank">{{$index+1}}</td>
-        <td class="table-col-image"><img ng-src="{{artist.image}}" /></td>
-        <td class="table-col-main-text">{{artist.name}}</td>
+        <td class="table-col-image"><img ng-src="{{item.image}}" /></td>
+        <td class="table-col-main-text">{{item.name}}</td>
+    </tr>
+</table>
+
+<h4 class="result-section-header">Album Rankings</h4>
+<table class="results table table-condensed table-striped table-bordered">
+    <tr class="results-table-header">
+        <td>Rank</td>
+        <td colspan="3">Album</td>
+    </tr>
+    <tr ng-repeat="item in result.albums.top">
+        <td class="table-col-rank">{{$index+1}}</td>
+        <td class="table-col-image"><img ng-src="{{item.image}}" /></td>
+        <td class="table-col-main-text">{{item.name}}</td>
+        <td class="table-col-alt-text">{{item.artist}}</td>
     </tr>
 </table>
 
