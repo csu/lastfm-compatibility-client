@@ -54,7 +54,7 @@ compatApp.controller('CompatCtrl', function ($scope, $http) {
         success(function(data, status, headers, config) {
             $scope.result = data;
 
-            if ($scope.result["status"] != 0) {
+            if ($scope.result.status != 0) {
                 $scope.layout.mainContent = "/static/html/error.html";
             }
             else {
