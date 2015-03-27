@@ -36,7 +36,6 @@ var compatApp = angular.module('compatApp', []);
 compatApp.controller('CompatCtrl', function ($scope, $http) {
     $scope.layout = {};
     $scope.displayForm = function() {
-        console.log("hi");
         $scope.layout.mainContent = "/static/html/home-form.html";
     }();
 

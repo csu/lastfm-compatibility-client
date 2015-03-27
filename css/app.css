@@ -15,6 +15,16 @@
 .compat-form td {
   padding-bottom: 8px;
 }
-.results-table-header {
+.artist-results .results-table-header {
   font-weight: bold;
+  font-size: 14pt;
+}
+.artist-results .table-col-artist-image {
+  width: 64;
+}
+.artist-results .table-col-rank {
+  font-size: 16pt;
+}
+.artist-results .table-col-artist {
+  font-size: 13pt;
 }
