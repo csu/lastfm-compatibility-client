@@ -31,3 +31,15 @@
 .result-section-header {
   font-size: 18pt;
 }
+.compatibility-scores {
+  margin-top: 15px;
+}
+.compatibility-score {
+  font-size: 16pt;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  border: 1px solid #000000;
+}
