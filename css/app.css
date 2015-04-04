@@ -46,3 +46,7 @@
 .compatibility-score span {
   padding-bottom: 3.2;
 }
+#footer p {
+  font-size: 12pt;
+  margin-bottom: 0px;
+}
