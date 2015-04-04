@@ -26,8 +26,8 @@
             </tr>
             <tr ng-repeat="item in result.artists.top">
                 <td class="table-col-rank">{{$index+1}}</td>
-                <td class="table-col-image"><a href="{{item.url}}"><img ng-src="{{item.image}}" /></a></td>
-                <td class="table-col-main-text"><a href="{{item.url}}">{{item.name}}</a></td>
+                <td class="table-col-image"><a href="{{item.url}}" target="_blank"><img ng-src="{{item.image}}" /></a></td>
+                <td class="table-col-main-text"><a href="{{item.url}}" target="_blank">{{item.name}}</a></td>
             </tr>
         </table>
     </div>
@@ -40,9 +40,9 @@
             </tr>
             <tr ng-repeat="item in result.albums.top">
                 <td class="table-col-rank">{{$index+1}}</td>
-                <td class="table-col-image"><a href="{{item.url}}"><img ng-src="{{item.image}}" /></td>
-                <td class="table-col-main-text"><a href="{{item.url}}">{{item.name}}</td>
-                <td class="table-col-alt-text"><a href="{{item.artist.url}}">{{item.artist.name}}</td>
+                <td class="table-col-image"><a href="{{item.url}}" target="_blank"><img ng-src="{{item.image}}" /></td>
+                <td class="table-col-main-text"><a href="{{item.url}}" target="_blank">{{item.name}}</td>
+                <td class="table-col-alt-text"><a href="{{item.artist.url}}" target="_blank">{{item.artist.name}}</td>
             </tr>
         </table>
     </div>
@@ -56,8 +56,8 @@
             </tr>
             <tr ng-repeat="item in result.tracks.top">
                 <td class="table-col-rank">{{$index+1}}</td>
-                <td class="table-col-main-text"><a href="{{item.url}}">{{item.name}}</td>
-                <td class="table-col-alt-text"><a href="{{item.artist.url}}">{{item.artist.name}}</td>
+                <td class="table-col-main-text"><a href="{{item.url}}" target="_blank">{{item.name}}</td>
+                <td class="table-col-alt-text"><a href="{{item.artist.url}}" target="_blank">{{item.artist.name}}</td>
             </tr>
         </table>
     </div>
