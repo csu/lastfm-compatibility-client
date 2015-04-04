@@ -43,3 +43,6 @@
   -webkit-border-radius: 8px 8px 8px 8px;
   border: 1px solid #000000;
 }
+.compatibility-score span {
+  padding-bottom: 3.2;
+}

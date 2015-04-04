@@ -5,6 +5,7 @@
     <div class="compatibility-scores">
     <span class="compatibility-score">Artists <span class="label label-default">{{result.artists.score}}</span></span>
     <span class="compatibility-score">Albums <span class="label label-default">{{result.albums.score}}</span></span>
+    <span class="compatibility-score">Songs <span class="label label-default">{{result.tracks.score}}</span></span>
 </div>
 
 <h3>Rankings</h3>
@@ -12,6 +13,7 @@
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#artist-results">Artists</a></li>
     <li><a data-toggle="tab" href="#album-results">Albums</a></li>
+    <li><a data-toggle="tab" href="#song-results">Songs</a></li>
 </ul>
 
 <div class="tab-content">
@@ -24,8 +26,8 @@
             </tr>
             <tr ng-repeat="item in result.artists.top">
                 <td class="table-col-rank">{{$index+1}}</td>
-                <td class="table-col-image"><img ng-src="{{item.image}}" /></td>
-                <td class="table-col-main-text">{{item.name}}</td>
+                <td class="table-col-image"><a href="{{item.url}}"><img ng-src="{{item.image}}" /></a></td>
+                <td class="table-col-main-text"><a href="{{item.url}}">{{item.name}}</a></td>
             </tr>
         </table>
     </div>
@@ -38,9 +40,24 @@
             </tr>
             <tr ng-repeat="item in result.albums.top">
                 <td class="table-col-rank">{{$index+1}}</td>
-                <td class="table-col-image"><img ng-src="{{item.image}}" /></td>
-                <td class="table-col-main-text">{{item.name}}</td>
-                <td class="table-col-alt-text">{{item.artist}}</td>
+                <td class="table-col-image"><a href="{{item.url}}"><img ng-src="{{item.image}}" /></td>
+                <td class="table-col-main-text"><a href="{{item.url}}">{{item.name}}</td>
+                <td class="table-col-alt-text"><a href="{{item.artist.url}}">{{item.artist.name}}</td>
+            </tr>
+        </table>
+    </div>
+    <div id="song-results" class="tab-pane fade">
+        <!-- <h4 class="result-section-header">Song Rankings</h4> -->
+        <table class="results table table-condensed table-striped table-bordered">
+            <tr class="results-table-header">
+                <td>Rank</td>
+                <td>Song</td>
+                <td>Artist</td>
+            </tr>
+            <tr ng-repeat="item in result.tracks.top">
+                <td class="table-col-rank">{{$index+1}}</td>
+                <td class="table-col-main-text"><a href="{{item.url}}">{{item.name}}</td>
+                <td class="table-col-alt-text"><a href="{{item.artist.url}}">{{item.artist.name}}</td>
             </tr>
         </table>
     </div>
