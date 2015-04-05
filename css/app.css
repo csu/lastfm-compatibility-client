@@ -1,9 +1,11 @@
 .jumbotron {
+  background-color: transparent;
   padding: 25px 0;
 }
 .jumbotron h1 {
   font-size: 50px;
   margin-bottom: 25px;
+  text-align: left;
 }
 .compat-form .form-title {
   font-size: 18;
