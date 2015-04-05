@@ -41,10 +41,10 @@
   text-align: center;
 }
 .compatibility-scores .compatibility-score {
-  padding-right: 60px;
+  padding-right: 80px;
 }
 .compatibility-scores .compatibility-score .compatibility-score-num {
-  font-size: 28pt;
+  font-size: 40pt;
   font-weight: 800;
 }
 .compatibility-scores .compatibility-score .compatibility-score-label {
