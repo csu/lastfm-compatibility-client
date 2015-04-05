@@ -37,17 +37,20 @@
 .compatibility-scores {
   margin-top: 15px;
 }
-.compatibility-score {
-  font-size: 16pt;
-  padding: 8px;
-  margin-right: 10px;
-  border-radius: 8px 8px 8px 8px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  -webkit-border-radius: 8px 8px 8px 8px;
-  border: 1px solid #000000;
+.compatibility-scores {
+  text-align: center;
 }
-.compatibility-score span {
-  padding-bottom: 3.2;
+.compatibility-scores .compatibility-score {
+  padding-right: 60px;
+}
+.compatibility-scores .compatibility-score .compatibility-score-num {
+  font-size: 28pt;
+  font-weight: 800;
+}
+.compatibility-scores .compatibility-score .compatibility-score-label {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #C4C4C4;
 }
 #footer p {
   font-size: 12pt;

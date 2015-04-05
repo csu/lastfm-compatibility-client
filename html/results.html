@@ -2,11 +2,22 @@
 <h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{result.user_2}}</h4>
 
 <h3>Compatibility Scores</h3>
-    <div class="compatibility-scores">
-    <span class="compatibility-score">Artists <span class="label label-default">{{result.artists.score}}</span></span>
-    <span class="compatibility-score">Albums <span class="label label-default">{{result.albums.score}}</span></span>
-    <span class="compatibility-score">Songs <span class="label label-default">{{result.tracks.score}}</span></span>
-</div>
+<table class="compatibility-scores">
+    <tr>
+        <td class="compatibility-score">
+            <div class="compatibility-score-num">{{result.artists.score}}</div>
+            <div class="compatibility-score-label">Artists</div>
+        </td>
+        <td class="compatibility-score">
+            <div class="compatibility-score-num">{{result.albums.score}}</div>
+            <div class="compatibility-score-label">Albums</div>
+        </td>
+        <td class="compatibility-score">
+            <div class="compatibility-score-num">{{result.tracks.score}}</div>
+            <div class="compatibility-score-label">Songs</div>
+        </td>
+    </tr>
+</table>
 
 <h3>Rankings</h3>
 
