@@ -47,6 +47,11 @@
   font-size: 40pt;
   font-weight: 800;
 }
+.compatibility-scores .compatibility-score .compatibility-score-num-overall {
+  font-size: 40pt;
+  font-weight: 800;
+  color: #0CE3AC;
+}
 .compatibility-scores .compatibility-score .compatibility-score-label {
   text-transform: uppercase;
   font-weight: 100;
